@@ -1,0 +1,90 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+  <title>Програмування Webskill</title> 
+  <link rel="stylesheet" href="css/style.css"> 
+  <link href="https://fonts.google.com/specimen/Raleway?query=raleway" rel="stylesheet"> 
+</head> 
+<body> 
+ <header> 
+  <div class="logo"> 
+   <a href="index.html"><img class="gflogo" src="img/logo.png" alt="Logo"></a> 
+  </div> 
+  <nav> 
+   <div class="tpnav" id="myTpnav"> 
+    <a href="index.html">HOME</a> 
+    <a href="projects.html">PROJECTS</a> 
+    <a href="blog.html">BLOG</a> 
+    <a href="contact.html">CONTACT</a> 
+    <a href="about.html">ABOUT</a> 
+    <a href="services.html">SERVICES</a> 
+    <a href="location.html">LOCATION</a> 
+    <a id="menu" href="#" class="icon">&#9776;</a> 
+   </div> 
+  </nav> 
+ </header> 
+	<main>
+		<h1>Location</h1>
+		<div id="map"></div>
+	</main>
+ <footer> 
+  <nav> 
+    <a href="index.html">HOME</a> 
+    <a href="projects.html">PROJECTS</a> 
+    <a href="blog.html">BLOG</a> 
+    <a href="contact.html">CONTACT</a> 
+    <a href="about.html">ABOUT</a> 
+    <a href="services.html">SERVICES</a> 
+    <a href="location.html">LOCATION</a> 
+  </nav> 
+  <div class="logo"> 
+  <a href="index.html"><img class="gflogo" src="img/logo.png" alt="Logo"></a> 
+  </div> 
+  <div class="social"> 
+ <a href"><img src="img/em.jpg" alt=""></a> 
+ <a href"><img src="img/face.jpg" alt=""></a> 
+ <a href"><img src="img/goo.jpg" alt=""></a> 
+ <a href"><img src="img/inst.jpg" alt=""></a> 
+ <a href"><img src="img/pint.jpg" alt=""></a> 
+  </div> 
+  <p>Maksym T. for Webskill. 2023</p> 
+  
+  
+  <script>
+  function toggleHamburgerMenu() {
+    var menu = document.getElementById("myTpnav");
+    if (menu.classList.contains("responsive")) {
+      menu.classList.remove("responsive");
+    } else {
+      menu.classList.add("responsive");
+    }
+  }
+
+  document.getElementById("menu").addEventListener("click", function() {
+    toggleHamburgerMenu();
+  });
+
+</script>
+  
+  
+  
+  <script>
+function initMap() {
+var uluru = {lat: 49.8326598, lng: 23.9298361 };
+var map = new google.maps.Map(document.getElementById('map'), {
+zoom: 5,
+center: uluru
+});
+var marker = new google.maps.Marker({
+position: uluru,
+map: map
+});
+}
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBGcvoEaa506_uZmDXrZYDvf2nMKFKpTo&callback=initMap"> </script>
+ </footer> 
+</body> 
+</html>

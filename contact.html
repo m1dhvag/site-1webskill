@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Програмування Webskill</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.google.com/specimen/Raleway?query=raleway" rel="stylesheet">
+</head>
+<body>
+ <header>
+  <div class="logo">
+   <a href="index.html"><img class="gflogo" src="img/logo.png" alt="Logo"></a>
+  </div>
+  <nav>
+   <div class="tpnav" id="myTpnav">
+    <a href="index.html">HOME</a>
+    <a href="projects.html">PROJECTS</a>
+    <a href="blog.html">BLOG</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="about.html">ABOUT</a>
+    <a href="services.html">SERVICES</a>
+    <a href="location.html">LOCATION</a>
+    <a id="menu" href="#" class="icon">&#9776;</a>
+   </div>
+  </nav>
+ </header>
+ <main>
+  <form class="form">
+   <p><input type="text" name="name" class="feedback-input" placeholder="Name" id="name"></p>
+   <p><input type="email" name="email" class="feedback-input" placeholder="Email" id="email"></p>
+   <p><textarea name="text" placeholder="Message" class="feedback-input"></textarea></p>
+   <input type="submit" value="Submit" class="button-submit">
+   <div class="ease">
+    
+   
+   </div>
+   <div class="cont-info"><h1>Telephone Access</h1>
+   <p><img src="img/Ukraine-Flag.png">  (068) 809-8940</p>
+   <p><img src="img/UnitedKingdom.png">  0808 234-2046</p>
+   <p><img src="img/Australia.png">  1 800 983-148</p>
+   <h2>Dedicated Assistant : ma@tkachuk.com</h2></div>
+  </form>
+ </main>
+ <footer>
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="projects.html">PROJECTS</a>
+    <a href="blog.html">BLOG</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="about.html">ABOUT</a>
+    <a href="services.html">SERVICES</a>
+    <a href="location.html">LOCATION</a>
+  </nav>
+  <div class="logo">
+  <a href="index.html"><img class="gflogo" src="img/logo.png" alt="Logo"></a>
+  </div>
+  <div class="social">
+ <a href"><img src="img/em.jpg" alt=""></a>
+ <a href"><img src="img/face.jpg" alt=""></a>
+ <a href"><img src="img/goo.jpg" alt=""></a>
+ <a href"><img src="img/inst.jpg" alt=""></a>
+ <a href"><img src="img/pint.jpg" alt=""></a>
+  </div>
+  <p>Maksym T. for Webskill. 2023</p>
+ </footer>
+ <script>
+  function toggleHamburgerMenu() {
+    var menu = document.getElementById("myTpnav");
+    if (menu.classList.contains("responsive")) {
+      menu.classList.remove("responsive");
+    } else {
+      menu.classList.add("responsive");
+    }
+  }
+
+  document.getElementById("menu").addEventListener("click", function() {
+    toggleHamburgerMenu();
+  });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+  <title>Програмування Webskill</title> 
+  <link rel="stylesheet" href="css/style.css"> 
+  <link href="https://fonts.google.com/specimen/Raleway?query=raleway" rel="stylesheet"> 
+</head> 
+<body> 
+ <header> 
+  <div class="logo"> 
+   <a href="index.html"><img class="gflogo" src="img/logo.png" alt=""></a> 
+  </div> 
+  <nav> 
+   <div class="tpnav" id="myTpnav"> 
+    <a href="index.html">HOME</a> 
+    <a href="projects.html">PROJECTS</a> 
+    <a href="blog.html">BLOG</a> 
+    <a href="contact.html">CONTACT</a> 
+    <a href="about.html">ABOUT</a> 
+    <a href="services.html">SERVICES</a> 
+    <a href="location.html">LOCATION</a> 
+    <a id="menu" href="#" class="icon">&#9776;</a> 
+   </div> 
+  </nav> 
+ </header> 
+ <main> 
+  <img src="img/webb.jpg" alt="" class="mw-100"> 
+  <div class="advantages_container"> 
+   <div class="advantages">
+    <div class="advantages_item">
+     <img src="img/1.jpg" alt="">
+     <h2>Pages</h2>
+     <p>Надіюсь що ви приймите цей сайт завдяки великої кількості сторінок і старань які в них вложені.</p>
+    </div>
+    <div class="advantages_item">
+     <img src="img/2.jpg" alt="">
+     <h2>Who are we? What do we do?</h2>
+     <p><b>Ми допомагаємо</b> початківцям розвинутись в різних сферах. Наприклад: крипта, програмування, бізнес. Все на ваш особистий смак.</p>
+    </div>
+    <div class="advantages_item">
+     <img src="img/3.jpg" alt="">
+     <h2>Multitasking mode</h2>
+     <p>Цей сайт був створений не на одному пристрої, і не на одній локації. На створення сайту було потрачено багато роботи. (Надіюсь на сертифікат.)</p>
+    </div>
+    <div class="advantages_item">
+     <img src="img/4.jpg" alt="">
+     <h2>Blogs</h2>
+     <p>Тут також є блоги багатих, та інтересних людей. Надіюсь мав буде цікаво почитати ці блоги.</p>
+    </div>
+    <div class="advantages_item">
+     <img src="img/5.jpg" alt="">
+     <h2>Dossier</h2>
+     <p><b>Це інформація про творця сайту:</b> Звати: Max, 13y.old, Живе in Lviv. Навчався та робив цей сайт у Secondary General Educational School number7.</p>
+    </div>
+    <div class="advantages_item">
+     <img src="img/6.jpg" alt="">
+     <h2>Location</h2>
+     <p>На сторінці<b> Location </b>ви можете подивитись в якому місці був створений цей сайт. Приїхати та подивитись на красу цього міста в якому я створив цей сайт.</p>
+    </div>
+   </div>
+  </div> 
+ </main> 
+ <footer> 
+  <nav> 
+    <a href="index.html">HOME</a> 
+    <a href="projects.html">PROJECTS</a> 
+    <a href="blog.html">BLOG</a> 
+    <a href="contact.html">CONTACT</a> 
+    <a href="about.html">ABOUT</a> 
+    <a href="services.html">SERVICES</a> 
+    <a href="location.html">LOCATION</a> 
+  </nav> 
+  <div class="logo"> 
+  <a href="index.html"><img class="gflogo" src="img/logo.png" alt="Logo"></a> 
+  </div> 
+  <div class="social"> 
+ <a href"><img src="img/em.jpg" alt=""></a> 
+ <a href"><img src="img/face.jpg" alt=""></a> 
+ <a href"><img src="img/goo.jpg" alt=""></a> 
+ <a href"><img src="img/inst.jpg" alt=""></a> 
+ <a href"><img src="img/pint.jpg" alt=""></a> 
+  </div> 
+  <p>Maksym T. for Webskill. 2023</p> 
+ </footer> 
+ <script>
+ function toggleHamburgerMenu() {
+    var menu = document.getElementById("myTpnav");
+    if (menu.classList.contains("responsive")) {
+      menu.classList.remove("responsive");
+    } else {
+      menu.classList.add("responsive");
+    }
+  }
+
+  document.getElementById("menu").addEventListener("click", function() {
+    toggleHamburgerMenu();
+  });
+  </script>
+</body> 
+</html>

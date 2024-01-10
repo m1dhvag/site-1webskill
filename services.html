@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Програмування Webskill</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.google.com/specimen/Raleway?query=raleway" rel="stylesheet">
+</head>
+<body>
+ <header>
+  <div class="logo">
+   <a href="index.html"><img class="gflogo" src="img/logo.png" alt="Logo"></a>
+  </div>
+  <nav>
+   <div class="tpnav" id="myTpnav">
+    <a href="index.html">HOME</a>
+    <a href="projects.html">PROJECTS</a>
+    <a href="blog.html">BLOG</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="about.html">ABOUT</a>
+    <a href="services.html">SERVICES</a>
+    <a href="location.html">LOCATION</a>
+    <a id="menu" href="#" class="icon">&#9776;</a>
+   </div>
+  </nav>
+ </header>
+ <main class="services">
+ <img src="https://www.swiftsystems.com/guides-tips/wp-content/uploads/2019/09/managed-it-services.jpg">
+  <div class="services_container">
+   <div class="services_container_block">
+    <h3><b>High-Technology Corporate</b></h3>
+    <p><b>Mirillis</b> is a Ukraine-based developer, manufacturer, and servicer of electronic products primarily for the consumer market. The company offers personal computers, tablets, projectors, and broadcast and professional AV systems. Mirillis also produces appliances such as air conditioners, TVs, refrigerators, and washing machines.</p>
+    <h3><b>Mirillis Phones</b></h3>
+    <p>Aslo <b>Mirillis</b> designs, manufactures and markets a broad range of consumer technology products. These include smartphones, personal computers, tablets, wearable devices, home entertainment devices, and much more. Some of its most popular products include its Mirillis smartphones and Mac computers. Mirillis also has dramatically expanded its sales from services. It operates digital content stores and recently launched several streaming services, including Mirillis+, a platform for on-demand entertainment content.</p>
+   </div>
+  </div>
+ </main>
+ <footer>
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="projects.html">PROJECTS</a>
+    <a href="blog.html">BLOG</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="about.html">ABOUT</a>
+    <a href="services.html">SERVICES</a>
+    <a href="location.html">LOCATION</a>
+  </nav>
+  <div class="logo">
+  <a href="index.html"><img class="gflogo" src="img/logo.png" alt="Logo"></a>
+  </div>
+  <div class="social">
+ <a href"><img src="img/em.jpg" alt=""></a>
+ <a href"><img src="img/face.jpg" alt=""></a>
+ <a href"><img src="img/goo.jpg" alt=""></a>
+ <a href"><img src="img/inst.jpg" alt=""></a>
+ <a href"><img src="img/pint.jpg" alt=""></a>
+  </div>
+  <p>Maksym T. for Webskill. 2023</p>
+ </footer>
+ <script>
+  function toggleHamburgerMenu() {
+    var menu = document.getElementById("myTpnav");
+    if (menu.classList.contains("responsive")) {
+      menu.classList.remove("responsive");
+    } else {
+      menu.classList.add("responsive");
+    }
+  }
+
+  document.getElementById("menu").addEventListener("click", function() {
+    toggleHamburgerMenu();
+  });
+
+</script>
+</body>
+</html>

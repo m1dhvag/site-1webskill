@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Програмування Webskill</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.google.com/specimen/Raleway?query=raleway" rel="stylesheet">
+</head>
+<body>
+ <header>
+  <div class="logo">
+   <a href="index.html"><img class="gflogo" src="img/logo.png" alt="Logo"></a>
+  </div>
+  <nav>
+   <div class="tpnav" id="myTpnav">
+    <a href="index.html">HOME</a>
+    <a href="projects.html">PROJECTS</a>
+    <a href="blog.html">BLOG</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="about.html">ABOUT</a>
+    <a href="services.html">SERVICES</a>
+    <a href="location.html">LOCATION</a>
+    <a id="menu" href="#" class="icon">&#9776;</a>
+   </div>
+  </nav>
+ </header>
+ <main>
+  <div class="about_container">
+   <img src="file:///E:/%D0%97%D0%B0%D0%B2%D0%B0%D0%BD%D1%82%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F/istockphoto-1309975838-1024x1024-transformed.jpeg">
+   <h1><b>Про нашу компанію<br>About company</b></h1>
+   <p>Українська ІТ-індустрія налічує близько 2300 компаній, з яких 72% мають ІТ-продукти. До каталогу увійшли 95 перспективних продуктових ІТ-компаній та 22 найбільш конкурентоздатних для глобального світу  ІТ-продукту. <br>
+   <b>Але ми, найкращі. Закажи сайт, або онлайн заняття. І перевір)</b><br>
+   IT Company є провідною компанією, яка надає ІТ-послуги та рішення, які пропонують низку послуг, орієнтованих на клієнта, які найкраще підходять для вашого онлайн-бізнесу. Маючи за плечима накопичений досвід і значні знання, ми можемо втілити ваші ідеї в реальність. Ми постійно намагаємось винаходити та вдосконалювати себе відповідно до новітніх технологій, щоб обслуговувати наших клієнтів як найкраще.
+   <br>ІТ-компанія уважно стежить за веб-тенденціями та веб-динамікою; тому він знає, що дійсно може задовольнити потреби вашого бізнесу, так само гладко, як добре підібрана рукавичка. Ми представлені в усіх можливих службах, які можуть просувати вашу бізнес-стратегію в Інтернеті: виділений і віртуальний сервер, віртуальний центр обробки даних, спільний веб-хостинг, веб-дизайн і розробка, Інтернет-маркетинг, веб-шлюз SMS, SSL-сертифікат, ІТ-послуги та рішення.</p>
+  </div>
+ </main>
+ <footer>
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="projects.html">PROJECTS</a>
+    <a href="blog.html">BLOG</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="about.html">ABOUT</a>
+    <a href="services.html">SERVICES</a>
+    <a href="location.html">LOCATION</a>
+  </nav>
+  <div class="logo">
+  <a href="index.html"><img class="gflogo" src="img/logo.png" alt="Logo"></a>
+  </div>
+  <div class="social">
+ <a href"><img src="img/em.jpg" alt=""></a>
+ <a href"><img src="img/face.jpg" alt=""></a>
+ <a href"><img src="img/goo.jpg" alt=""></a>
+ <a href"><img src="img/inst.jpg" alt=""></a>
+ <a href"><img src="img/pint.jpg" alt=""></a>
+  </div>
+  <p>Maksym T. for Webskill. 2023</p>
+ </footer>
+ <script>
+  function toggleHamburgerMenu() {
+    var menu = document.getElementById("myTpnav");
+    if (menu.classList.contains("responsive")) {
+      menu.classList.remove("responsive");
+    } else {
+      menu.classList.add("responsive");
+    }
+  }
+
+  document.getElementById("menu").addEventListener("click", function() {
+    toggleHamburgerMenu();
+  });
+
+</script>
+</body>
+</html>
